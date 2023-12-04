@@ -1,12 +1,17 @@
 
 import './App.css'
-import Nav from './components/nav/Nav'
-import { Container } from './utils/Utils'
+import NewReleased from './components/new-released/NewReleased'
+import Spotlights from './components/spotlights/Spotlights'
+import Nav from './layout/nav/Nav'
 
 function App() {
 
   return (
-      <Nav/>    
+      <>
+        <Nav/>
+        <NewReleased/>
+        {/* <Spotlights/> */}
+      </>
   )
 }
 
