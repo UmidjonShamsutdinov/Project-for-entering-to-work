@@ -55,11 +55,16 @@
         text-align: start;
         >a{
             text-decoration: none;
+            display: flex;
+            justify-content: center;
         }
     }
 }
 
-
+.swiper-wrapper{
+    display: flex !important;
+    align-items: center;
+}
 
 .swiper {
     width: 100%;

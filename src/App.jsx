@@ -10,7 +10,7 @@ function App() {
       <>
         <Nav/>
         <NewReleased/>
-        {/* <Spotlights/> */}
+        <Spotlights/>
       </>
   )
 }

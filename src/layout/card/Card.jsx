@@ -3,13 +3,12 @@ import "./Card.scss"
 import { Link } from 'react-router-dom'
 import { FaPlay } from "react-icons/fa";
 
-const Card = ({type, photo, title, description, links}) => {
+const Card = ({type, photo, title, description, links, overlay}) => {
   return (
     <div className={`card ${type}`}>
-        {type==="defaultP" || type==="smallP" || type==="mediumP" ? "hello" : 
-          <>
-          <div className="img">
+        <div className="img">
           <img src={photo} alt="" />
+          {overlay? <p className='card-overlay'>{overlay}</p> : ""}
           {
             type==="big2" && <div  className='play-btn'><FaPlay className='icon'/></div>
           }
@@ -25,9 +24,6 @@ const Card = ({type, photo, title, description, links}) => {
             <h2>{title}</h2>
             <p>{description}</p>
         </div>
-        </>
-        }
-        
     </div>
   )
 }
