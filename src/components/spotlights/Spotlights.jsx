@@ -155,7 +155,7 @@ const Spotlights = () => {
                 >
                     {
                         arr.map((e, i)=>
-                            <SwiperSlide className='swiper-slide'>
+                            <SwiperSlide className='swiper-slide spotlightslide'>
                                 <Link key={i}>
                                     <Card type={e.type} photo={e.img} title={e.title} description={e.description} links={e.links} overlay={e.overlay}/>
                                 </Link>

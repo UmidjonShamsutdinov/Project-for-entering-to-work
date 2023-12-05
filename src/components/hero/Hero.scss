@@ -1,61 +1,99 @@
 .hero{
     background-color: #FFD0D5;
-    height: 600px;
+    padding: 60px 0;
+}
+
+.hero-swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.hero__title{
+  color: #171313;
+  font-family: var(--main-font);
+  font-size: 30.25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 
 
-.swiper {
-    width: 240px;
-    height: 320px;
+.adminadmin {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
   }
   
   .swiper-slide {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between !important;
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
+    color: #000;
   }
-  
+
+
+  .hero-slides{
+    display: flex;
+    height: 100% !important;
+    max-height: 900px !important;
+    >img{
+      width: 50% !important;
+    }
+    >div{
+      >p{
+        color: #171313;
+        font-family: var(--main-font);
+        font-size: 60.75px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 69.12px; /* 113.778% */
+        letter-spacing: -3.84px;
+      }
+    }
+  }
+
   .swiper-slide:nth-child(1n) {
-    background-color: rgb(206, 17, 17);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
+    background-color: #FFD0D5;
   }
   
   .swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
+    background-color: #FFD0D5;
   }
+  
+  
