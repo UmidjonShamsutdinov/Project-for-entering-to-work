@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from "../../assets/logo.svg"
+import footlogo from "../../assets/logo.svg"
 import { Container } from '../../utils/Utils'
 import { Link } from 'react-router-dom'
 import { FaArrowUp } from "react-icons/fa6";
@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="footer-main">
                 <div className='footer-top'>
                     <div className="logo">
-                        <img src={logo} alt="" />
+                        <img src={footlogo} alt="" />
                     </div>
                     <div className="uls">
                         <ul className='first-li'>
