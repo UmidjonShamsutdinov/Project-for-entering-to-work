@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./Spotlights.scss"
 import photo from "../../assets/spotlight1.png"
 import photo1 from "../../assets/spotlight2.png"
@@ -18,7 +18,96 @@ import 'swiper/css/pagination';
 
 
 const Spotlights = () => {
+
+
+
+
+
     const arr = [
+        {   
+            type: "defaultP",
+            img: photo,
+            overlay: "Stockholm",
+            title: "Tobi Oyadiran",
+            description: "Product Designer II"
+        },
+        {  
+            type: "smallP",
+            img: photo1,
+            overlay: "New York",
+            title: "Grace Kwon",
+            description: "Senior Service Designer"
+        },
+        {   
+            type: "mediumP",
+            img: photo2,
+            overlay: "Stockholm",
+            title: "René Simonsson",
+            description: "Product Designer I"
+        },        
+        {   
+            type: "defaultP",
+            img: photo3,
+            overlay: "New York",
+            title: "Ashley Moody",
+            description: "Product Designer II"
+        },       
+        {   
+            type: "defaultP",
+            img: photo,
+            overlay: "Stockholm",
+            title: "Tobi Oyadiran",
+            description: "Product Designer II"
+        },
+        {  
+            type: "smallP",
+            img: photo1,
+            overlay: "New York",
+            title: "Grace Kwon",
+            description: "Senior Service Designer"
+        },
+        {   
+            type: "mediumP",
+            img: photo2,
+            overlay: "Stockholm",
+            title: "René Simonsson",
+            description: "Product Designer I"
+        },        
+        {   
+            type: "defaultP",
+            img: photo3,
+            overlay: "New York",
+            title: "Ashley Moody",
+            description: "Product Designer II"
+        },       
+        {   
+            type: "defaultP",
+            img: photo,
+            overlay: "Stockholm",
+            title: "Tobi Oyadiran",
+            description: "Product Designer II"
+        },
+        {  
+            type: "smallP",
+            img: photo1,
+            overlay: "New York",
+            title: "Grace Kwon",
+            description: "Senior Service Designer"
+        },
+        {   
+            type: "mediumP",
+            img: photo2,
+            overlay: "Stockholm",
+            title: "René Simonsson",
+            description: "Product Designer I"
+        },        
+        {   
+            type: "defaultP",
+            img: photo3,
+            overlay: "New York",
+            title: "Ashley Moody",
+            description: "Product Designer II"
+        },       
         {   
             type: "defaultP",
             img: photo,
@@ -60,7 +149,7 @@ const Spotlights = () => {
                     slidesPerView={3.4}
                     spaceBetween={120}
                     pagination={{
-                    clickable: true,
+                        clickable: true,
                     }}
                     className="mySwiper"
                 >
